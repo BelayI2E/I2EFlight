@@ -39,13 +39,6 @@ public class Flight_Schedule implements Serializable{
 	@Temporal(value=TemporalType.TIMESTAMP)
 	private Date arrival_date;
 	
-	@Column(name="departure_airport",nullable=false)
-	@OneToMany(fetch=FetchType.LAZY,cascade=CascadeType.ALL)
-	private Set<Airport> departure_airports;
-	
-	@Column(name="arrival_airport",nullable=false)
-	@OneToMany(fetch=FetchType.LAZY,cascade=CascadeType.ALL)
-	private Set<Airport> arrival_airport;
 	
 	public Flight_Schedule() {}
 
@@ -81,22 +74,6 @@ public class Flight_Schedule implements Serializable{
 		this.arrival_date = arrival_date;
 	}
 
-	public Set<Airport> getDeparture_airports() {
-		return departure_airports;
-	}
-
-	public void setDeparture_airports(Set<Airport> departure_airports) {
-		this.departure_airports = departure_airports;
-	}
-
-	public Set<Airport> getArrival_airport() {
-		return arrival_airport;
-	}
-
-	public void setArrival_airport(Set<Airport> arrival_airport) {
-		this.arrival_airport = arrival_airport;
-	}
-	
 	
 	
 	

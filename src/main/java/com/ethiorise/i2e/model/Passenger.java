@@ -40,6 +40,7 @@ public class Passenger implements Serializable{
 	private String province;
 	@Column(name="postal_code")
 	private String postal_code;
+	
 	@Column(name="country",nullable=false)
 	private String country;
 	

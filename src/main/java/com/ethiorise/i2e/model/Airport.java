@@ -22,18 +22,12 @@ public class Airport implements Serializable{
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	
-	@Column(name="airport_location",nullable=false)
-	private String airport_location;
+	@Column(name="airport_name",nullable=false)
+	private String airport_name;
 	
 	@Column(name="airport_description",nullable=false)
 	private String airport_description;
 	
-	@ManyToOne
-	@JoinColumn(name="departure_airport")
-	private Flight departure;
-	@ManyToOne
-	@JoinColumn(name="arrival_airport")
-	private Flight arrival;
 	
 	public long getId() {
 		return id;
@@ -44,36 +38,26 @@ public class Airport implements Serializable{
 	public Airport() {}
 	
 
-	public Flight getDeparture() {
-		return departure;
+
+
+	public String getAirport_name() {
+		return airport_name;
 	}
 
 
 
-	public void setDeparture(Flight departure) {
-		this.departure = departure;
-	}
-
-
-
-	public Flight getArrival() {
-		return arrival;
-	}
-
-
-
-	public void setArrival(Flight arrival) {
-		this.arrival = arrival;
+	public void setAirport_name(String airport_name) {
+		this.airport_name = airport_name;
 	}
 
 
 
 	public String getAirport_location() {
-		return airport_location;
+		return airport_name;
 	}
 
 	public void setAirport_location(String airport_location) {
-		this.airport_location = airport_location;
+		this.airport_name = airport_location;
 	}
 
 	public String getAirport_description() {

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>FlySky</title>
 </head>
 <body>
 <h1>Pages about I2E flight company</h1>

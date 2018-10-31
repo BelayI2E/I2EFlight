@@ -8,4 +8,6 @@ import com.ethiorise.i2e.model.Flight;
 @Repository
 public interface FlightRepository extends JpaRepository<Flight, Long>{
 
+
+	
 }
